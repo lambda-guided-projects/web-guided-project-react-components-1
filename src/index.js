@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+import Playground from './components/Playground'
 
 /*
 💥💥💥 Rules when DECLARING a React component 💥💥💥
@@ -22,14 +23,27 @@ import { render } from 'react-dom'
 */
 
 function App(props) {
+  const happy = true
+
   return (
     <div className='container'>
       <h1>Welcome to React, Web {props.cohort}</h1>
+      {happy ? <div>I am having a great day!</div> : <div>Having a bad day!</div>}
+      <Playground />
     </div>
   )
 }
 
+/*
+const h1 = document.createElement('h1')
+h1.textContent = "Welcome WebPT28"
+*/
+
+// THIS IS JSX below
+const h1 = <h1>Welcome WebPT28</h1>
+
+//ReactDOM.render method renders our react app on the DOM
 render(
-  <App cohort='37' />,
+  <App cohort="PT28"/>,
   document.querySelector('#root')
 )
