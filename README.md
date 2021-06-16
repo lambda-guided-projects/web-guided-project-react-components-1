@@ -1,3 +1,6 @@
+Initial Commit - Guided Project 06/15/2021
+
+
 # React Components and Component State
 
 ## Running this project
